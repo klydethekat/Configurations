@@ -137,7 +137,7 @@
 //#define BLUETOOTH
 
 // Name displayed in the LCD "Ready" message and Info menu
-#define CUSTOM_MACHINE_NAME "Ender-3 Pro-002MD3D" // KEN
+#define CUSTOM_MACHINE_NAME "Ender-3 Pro-003MD3D" // KEN 003
 
 // Printer's unique ID, used by some programs to differentiate between machines.
 // Choose your own or use a service like https://www.uuidgenerator.net/version4
@@ -1241,11 +1241,11 @@
  * Override with M203
  *                                      X, Y, Z [, I [, J [, K...]]], E0 [, E1[, E2...]]
  */
-#define DEFAULT_MAX_FEEDRATE          { 400, 400, 8, 70 } // KEN
+#define DEFAULT_MAX_FEEDRATE          { 500, 500, 50, 70 } // KEN 003
 
 //#define LIMITED_MAX_FR_EDITING        // Limit edit via M203 or LCD to DEFAULT_MAX_FEEDRATE * 2
 #if ENABLED(LIMITED_MAX_FR_EDITING)
-  #define MAX_FEEDRATE_EDIT_VALUES    { 600, 600, 10, 100 } // ...or, set your own edit limits // KEN
+  #define MAX_FEEDRATE_EDIT_VALUES    { 1000, 1000, 60, 200 } // ...or, set your own edit limits // KEN 003
 #endif
 
 /**
